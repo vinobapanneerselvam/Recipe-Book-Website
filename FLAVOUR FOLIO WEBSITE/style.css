@@ -1,0 +1,447 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1.heading {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+h1.heading span {
+    display: inline-block;
+    transition: 0.5s;
+}
+
+h1.heading span.space {
+    width: 1rem;
+}
+
+h1.heading:hover span {
+    transform: translateY(-10px);
+}
+
+/* Header styles */
+header.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.header a.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+header.header nav.navbar a {
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: #666;
+    transition: color 0.3s;
+}
+
+header.header nav.navbar a.active,
+header.header nav.navbar a:hover {
+    color: #e74c3c;
+}
+
+header.header .fas.fa-bars {
+    display: none;
+}
+
+/* Home section styles */
+section.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 2rem;
+    background: #f8f8f8;
+}
+
+section.home .content {
+    max-width: 50%;
+}
+
+section.home .content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+section.home .content h3 span {
+    color: #e74c3c;
+}
+
+section.home .content p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+section.home .content .btn {
+    padding: 0.8rem 2rem;
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+}
+
+section.home .content .btn:hover {
+    background: #c0392b;
+}
+
+section.home .image {
+    max-width: 45%;
+}
+
+section.home .image img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* Search section styles */
+section.search {
+    padding: 4rem 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+section.search .search-bar {
+    max-width: 500px;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+section.search .search-bar input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+section.search .search-bar ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+section.search .search-bar ul li {
+    padding: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+section.search .search-bar ul li:hover {
+    background: #f1f1f1;
+}
+/* About section styles */
+section.about {
+    padding: 4rem 2rem;
+    background: #f8f8f8;
+}
+
+section.about .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section.about .content .image {
+    flex: 1;
+    max-width: 45%;
+    margin-right: 2rem;
+}
+
+section.about .content .image img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+section.about .content .text {
+    flex: 1;
+    max-width: 50%;
+}
+
+section.about .content .text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+section.about .content .text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* Recipes section styles */
+section.recipes {
+    padding: 4rem 2rem;
+    background: #f8f8f8;
+}
+
+section.recipes .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+section.recipes .box {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+section.recipes .box:hover {
+    transform: translateY(-10px);
+}
+
+section.recipes .box .image img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+section.recipes .box .content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+section.recipes .box .content p {
+    margin-bottom: 1.5rem;
+    color: #777;
+}
+
+section.recipes .box .content .btn {
+    padding: 0.8rem 2rem;
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+}
+
+section.recipes .box .content .btn:hover {
+    background: #c0392b;
+}
+
+/* Add recipe section styles */
+section.add-recipe {
+    padding: 4rem 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+section.add-recipe form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section.add-recipe form .box {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+section.add-recipe form .btn {
+    padding: 0.8rem 2rem;
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+}
+
+section.add-recipe form .btn:hover {
+    background: #c0392b;
+}
+
+/* Contact section styles */
+section.contact {
+    padding: 4rem 2rem;
+    background: #f8f8f8;
+}
+
+section.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section.contact .row .image {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+section.contact .row .image img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+section.contact .row form {
+    flex: 1 1 45%;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+section.contact .row form h3 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+section.contact .row form .box {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+section.contact .row form .btn {
+    padding: 0.8rem 2rem;
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+}
+
+section.contact .row form .btn:hover {
+    background: #c0392b;
+}
+
+/* Footer section styles */
+section.footer {
+    padding: 2rem;
+    background: #333;
+    color: #fff;
+}
+
+section.footer .box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section.footer .box {
+    flex: 1 1 45%;
+    margin-bottom: 1rem;
+}
+
+section.footer .box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+section.footer .box p {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+section.footer .box a {
+    display: block;
+    color: #bbb;
+    margin: 0.5rem 0;
+    transition: color 0.3s;
+}
+
+section.footer .box a:hover {
+    color: #e74c3c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header.header .fas.fa-bars {
+        display: inline-block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    header.header nav.navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 1rem;
+        display: none;
+        flex-direction: column;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header.header nav.navbar a {
+        margin: 1rem 0;
+    }
+
+    header.header.active nav.navbar {
+        display: flex;
+    }
+
+    section.home {
+        flex-direction: column;
+    }
+
+    section.home .content,
+    section.home .image {
+        max-width: 100%;
+    }
+
+    section.contact .row {
+        flex-direction: column;
+    }
+
+    section.contact .row .image,
+    section.contact .row form {
+        max-width: 100%;
+    }
+}
